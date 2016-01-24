@@ -2,9 +2,27 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Skills-HTML-CSS</title>
+        <title>Ubermelon Careers</title>
     </head>
     <body>
-        <!-- your html goes here -->
+        <h1>Application Form</h1>
+        <h4>If you're interested in starting an exciting career in the artisanal melon delivery space, please apply using the form below.
+        </h4>
+        <form action="/application" method="POST">
+            <label for="fields-name">Name</label>
+            <br><input type="text" name="first-name" placeholder="First Name" id="fields-name">
+            <input type="text" name="first-name" placeholder="Last Name" id="fields-name">
+            <br><br><label for="field-salary-requirement">Salary Requirement: $</label>
+            <input type="text">
+            <br><br>Applying for Position of:
+                <select name="position">
+                    <label><option value="software-eng">Software Engineer</option></label>
+                    <label><option value="qa-eng">QA Engineer</option></label>
+                    <label><option value="prod-mgr">Product Manager</option></label>
+                </select>
+            <br><br><input type="submit" value="Apply">
+        </form>
     </body>
 </html>
+
+<!-- do as fully labeled and accessible -->
