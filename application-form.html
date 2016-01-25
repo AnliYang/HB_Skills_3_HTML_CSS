@@ -2,26 +2,47 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            h4 {
+                border: 1px solid black;
+            }
+
+            .last-name {
+                font-weight: bold;
+            }
+
+            .form-field {
+                background-color: #ffff99
+            }
+
+            .form-button {
+                background-color: #ffff99;
+            }
+
+        </style>
         <title>Ubermelon Careers</title>
     </head>
     <body>
+        <div>
         <h1>Application Form</h1>
         <h4>If you're interested in starting an exciting career in the artisanal melon delivery space, please apply using the form below.
         </h4>
         <form action="/application" method="POST">
             <label for="fields-name">Name</label>
-            <br><input type="text" name="first-name" placeholder="First Name" id="fields-name">
-            <input type="text" name="first-name" placeholder="Last Name" id="fields-name">
+            <br><input type="text" name="first-name" placeholder="First Name" class="form-field">
+            <input type="text" name="last-name" placeholder="Last Name" class="form-field last-name">
             <br><br><label for="field-salary-requirement">Salary Requirement: $</label>
-            <input type="text">
-            <br><br>Applying for Position of:
-                <select name="position">
+            <input type="text" class="form-field">
+            <br><br><label>Applying for Position of:
+                <select name="position" class="form-field"></label>
                     <label><option value="software-eng">Software Engineer</option></label>
                     <label><option value="qa-eng">QA Engineer</option></label>
                     <label><option value="prod-mgr">Product Manager</option></label>
                 </select>
-            <br><br><input type="submit" value="Apply">
+            <br><br><input type="submit" value="Apply" class="form-button">
         </form>
+        </div>
     </body>
 </html>
 
